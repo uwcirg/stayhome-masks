@@ -209,7 +209,7 @@ body,
 input,
 select,
 textarea {
-  color: rgba(0, 0, 0, 0.75);
+  color: rgba(255, 255, 255, 0.55);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16.5pt;
   font-weight: normal;
@@ -255,12 +255,12 @@ a {
 
 a:hover {
   border-bottom-color: transparent;
-  color: #000;
+  color: #ffffff;
 }
 
 strong,
 b {
-  color: #000;
+  color: #ffffff;
   font-weight: bold;
 }
 
@@ -279,22 +279,10 @@ h3,
 h4,
 h5,
 h6 {
-  color: #000;
+  color: #ffffff;
   font-weight: bold;
   line-height: 1.5;
   margin: 0 0 0.5em 0;
-}
-
-.wrapper.style1,
-.wrapper.style1 a,
-.wrapper.style1 a:hover,
-.wrapper.style1 h1,
-.wrapper.style1 h2,
-.wrapper.style1 h3,
-.wrapper.style1 h4,
-.wrapper.style1 h5,
-.wrapper.style1 h6 {
-  color: #fff;
 }
 
 h1 a,
@@ -445,10 +433,6 @@ hr.major {
 .align-right {
   text-align: right;
 }
-
-/*.hidden {
-    	display: none;
-	}*/
 
 /* Row */
 
@@ -1957,7 +1941,7 @@ button,
   letter-spacing: 0.25em;
   line-height: 4.75em;
   outline: 0;
-  padding: 0 1.75em;
+  padding: 0 3.75em;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -2108,22 +2092,18 @@ button:hover:active:after,
 }
 
 .features section {
-  padding: 1.5em 1.5em 0.1em 1.5em;
-  width: 100%;
+  padding: 3.5em 3em 1em 7em;
+  width: 50%;
   border-top: solid 1px rgba(255, 255, 255, 0.15);
   position: relative;
 }
 
-/*.features section:nth-child(-n + 2) {
-				border-top-width: 0;
-			}
+.features section:nth-child(-n + 2) {
+  border-top-width: 0;
+}
 
-			.features section:nth-child(2n) {
-				border-left: solid 1px rgba(255, 255, 255, 0.15);
-			}*/
-
-.features section:first-child {
-  border-top-width: 0 !important;
+.features section:nth-child(2n) {
+  border-left: solid 1px rgba(255, 255, 255, 0.15);
 }
 
 .features section .icon {
@@ -2311,7 +2291,7 @@ button:hover:active:after,
 
 @media screen and (max-width: 736px) {
   .features section {
-    padding: 1.5em 1.5em 0.1em 1.5em;
+    padding: 2.5em 1.5em 0.1em 5.5em;
   }
 
   .features section .icon {
@@ -2322,7 +2302,7 @@ button:hover:active:after,
 
 @media screen and (max-width: 480px) {
   .features section {
-    padding: 1.5em 1.5em 0.1em 1.5em;
+    padding: 2em 1.5em 0.1em 1.5em;
   }
 
   .features section .icon {
@@ -2427,27 +2407,12 @@ textarea {
   border-radius: 0.25em;
   border: none;
   border: solid 1px rgba(255, 255, 255, 0.15);
-  border-bottom: solid 2px rgba(255, 255, 255, 0.5);
   color: inherit;
   display: block;
   outline: 0;
   padding: 0 1em;
   text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 1.25em;
-  width: 75%;
-}
-
-@media screen and (max-width: 736px) {
-  input[type="text"],
-  input[type="password"],
-  input[type="email"],
-  input[type="tel"],
-  select,
-  textarea {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 input[type="text"]:invalid,
@@ -3343,10 +3308,6 @@ table.alt tfoot {
   }
 }
 
-.wrapper-divided > .wrapper {
-  box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.075);
-}
-
 .wrapper.alt {
   background-color: #261c3e;
 }
@@ -3360,11 +3321,25 @@ table.alt tfoot {
 }
 
 .wrapper.style2 {
-  background-color: #fff;
+  background-color: #f2f2f2;
+}
+
+.wrapper.style2 h1,
+.wrapper.style2 h2,
+.wrapper.style2 h3,
+.wrapper.style2 h4,
+.wrapper.style2 p,
+.wrapper.style2 a {
+  color: #000;
+}
+
+.wrapper.style2 .button {
+  border-color: rgba(0, 0, 0, 0.15) !important;
+  color: #000 !important;
 }
 
 .wrapper.style2-alt {
-  background-color: #ebebeb;
+  background-color: #3e4094;
 }
 
 .wrapper.style3 {
@@ -3373,6 +3348,10 @@ table.alt tfoot {
 
 .wrapper.style3-alt {
   background-color: #953d75;
+}
+
+.wrapper.style4 {
+  background-color: #ebebeb;
 }
 
 .wrapper.fullscreen {
@@ -3616,200 +3595,6 @@ body.is-preload .wrapper.fade > .inner {
 
 #header + #wrapper + #footer > .inner {
   margin: 0 auto;
-}
-
-/*menu hamborg */
-#menuToggle {
-  display: none;
-}
-
-@media screen and (max-width: 736px) {
-  /*#menuToggle a {
-	  		text-decoration: none;
-	  		color: #232323;
-			color: white;
-	  		transition: color 0.3s ease;
-		}*/
-
-  #menuToggle a {
-    -moz-transition: color 0.2s ease;
-    -webkit-transition: color 0.2s ease;
-    -ms-transition: color 0.2s ease;
-    transition: color 0.2s ease;
-    border: 0;
-    color: rgba(255, 255, 255, 0.35);
-    display: block;
-    font-size: 0.6em;
-    font-weight: bold;
-    letter-spacing: 0.25em;
-    line-height: 1.75;
-    outline: 0;
-    padding: 1.35em 0;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
-
-  #menuToggle a:before,
-  #sidebar nav a:after {
-    border-radius: 0.2em;
-    bottom: 0;
-    content: "";
-    height: 0.2em;
-    position: absolute;
-    right: 0;
-    width: 100%;
-  }
-
-  #menuToggle a:before {
-    background: #3c2c62;
-  }
-
-  #menuToggle a:after {
-    background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-    background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-    background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-    background-image: linear-gradient(to right, #5e42a6, #b74e91);
-    -moz-transition: max-width 0.2s ease;
-    -webkit-transition: max-width 0.2s ease;
-    -ms-transition: max-width 0.2s ease;
-    transition: max-width 0.2s ease;
-    max-width: 0;
-  }
-
-  #menuToggle a:hover {
-    color: rgba(255, 255, 255, 0.55);
-  }
-
-  #menuToggle a.active {
-    color: #ffffff;
-  }
-
-  #menuToggle a.active:after {
-    max-width: 100%;
-  }
-
-  #menuToggle {
-    display: block;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-
-    z-index: 1;
-
-    -webkit-user-select: none;
-    user-select: none;
-  }
-
-  #menuToggle input {
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    top: -7px;
-    left: -5px;
-
-    cursor: pointer;
-
-    opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
-
-    -webkit-touch-callout: none;
-  }
-
-  /*
-	 * Just a quick hamburger
-	 */
-  #menuToggle span {
-    display: block;
-    width: 33px;
-    height: 4px;
-    margin-bottom: 5px;
-    position: relative;
-
-    background: white;
-    border-radius: 3px;
-
-    z-index: 1;
-
-    transform-origin: 4px 0px;
-
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
-  }
-
-  #menuToggle span:first-child {
-    transform-origin: 0% 0%;
-  }
-
-  #menuToggle span:nth-last-child(2) {
-    transform-origin: 0% 100%;
-  }
-
-  /*
-	 * Transform all the slices of hamburger
-	 * into a crossmark.
-	 */
-  #menuToggle input:checked ~ span {
-    opacity: 1;
-    transform: rotate(45deg) translate(-2px, -1px);
-    background: white;
-  }
-
-  /*
-	 * But let's hide the middle one.
-	 */
-  #menuToggle input:checked ~ span:nth-last-child(3) {
-    opacity: 0;
-    transform: rotate(0deg) scale(0.2, 0.2);
-  }
-
-  /*
-	 * Ohyeah and the last one should go the other direction
-	 */
-  #menuToggle input:checked ~ span:nth-last-child(2) {
-    opacity: 1;
-    transform: rotate(-45deg) translate(0, -1px);
-  }
-
-  /*
-	 * Make this absolute positioned
-	 * at the top left of the screen
-	 */
-  #menu {
-    background: #312450;
-    height: 80vh;
-
-    position: absolute;
-    width: 250px;
-    margin: -100px 0 0 0;
-    padding: 20px;
-    padding-top: 125px;
-    right: -100px;
-
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-
-    transform-origin: 0% 0%;
-    transform: translate(100%, 0);
-
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  }
-
-  #menu li {
-    padding: 10px 0;
-
-    /*font-size: 22px;*/
-  }
-
-  /*
-	 * And let's fade it in from the left
-	 */
-  #menuToggle input:checked ~ ul {
-    transform: scale(1, 1);
-    opacity: 1;
-  }
 }
 
 /* Sidebar */
@@ -4191,19 +3976,39 @@ body.is-preload #sidebar nav ul li {
   }
 }
 
-/* ---- Masks ----- */
-
-.sub-text {
-  font-size: 14px; /* Make base font smaller for inner paragraph */
+.overflow-hidden {
+  overflow: hidden;
 }
 
-/* .image-content-left {
-  display: flex;
-}
-.app-image {
+.wrapper img.app-image {
   max-width: 100%;
-  width: 300px;
+  width: 150px;
   height: auto;
-  margin: auto 15px 15px auto;
-  display: block;
-} */
+}
+
+.features section.special-padding {
+  padding: 2.5em 2.5em 1em 2.5em;
+}
+
+ul.linked-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features.features-full-width section {
+  padding: 1.5em;
+  width: 100%;
+}
+
+.features.features-full-width section:nth-child(-n + 2) {
+  border-top: solid 1px rgba(255, 255, 255, 0.15) !important;
+}
+
+.features.features-full-width section:first-child {
+  border-top: 0 none !important;
+}
+
+.features.features-full-width section:nth-child(2n) {
+  border-left: 0 none;
+}
