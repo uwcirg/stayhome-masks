@@ -4018,6 +4018,10 @@ ul.linked-list {
   display: inline-block;
 }
 
+#research p {
+  margin: 0 0 0.5em 0;
+}
+
 .subtitle {
   display: block;
   text-transform: uppercase;
