@@ -2092,7 +2092,7 @@ button:hover:active:after,
 }
 
 .features section {
-  padding: 3.5em 3em 1em 7em;
+  padding: 3em 3em 1em 7em;
   width: 50%;
   border-top: solid 1px rgba(255, 255, 255, 0.15);
   position: relative;
@@ -4011,4 +4011,18 @@ ul.linked-list {
 
 .features.features-full-width section:nth-child(2n) {
   border-left: 0 none;
+}
+
+.margin-top {
+  margin-top: 1.5em;
+  display: inline-block;
+}
+
+.subtitle {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
 }
